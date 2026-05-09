@@ -78,10 +78,10 @@ It includes:
 This query allows users to search for products by name or description using partial matches.
 
 It includes:
--Search by product name
--Search by product description
--Case-insensitive matching (depending on collation)
--Flexible filtering using wildcard characters (%)
+- Search by product name
+- Search by product description
+- Case-insensitive matching (depending on collation)
+- Flexible filtering using wildcard characters (%)
 [Fourth query file](./queries/New-queries/Search-query.sql).
 ![Fourth query output](./assets/Search-query.png)
 
@@ -91,10 +91,10 @@ It includes:
 This query suggests popular products from the same category as a specific item, excluding the product already purchased.
 
 It includes:
--Automatic category detection via subquery
--Table joining between Product and Category for readable names
--Exclusion of the current product ID to ensure relevant suggestions
--Sorting by stock availability to prioritize in-stock items
+- Automatic category detection via subquery
+- Table joining between Product and Category for readable names
+- Exclusion of the current product ID to ensure relevant suggestions
+- Sorting by stock availability to prioritize in-stock items
 [Fifth query file](./queries/New-queries/Suggest-query.sql).
 ![Fifth query output](./assets/Suggest-query.png)
 
