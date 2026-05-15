@@ -38,6 +38,14 @@ CREATE TABLE Order_details (
     FOREIGN KEY (order_id) REFERENCES `Order`(order_id),
     FOREIGN KEY (product_id) REFERENCES Product(product_id)
 );
+
+CREATE TABLE Sale_History (
+    order_date DATE,
+    customer_name VARCHAR(50),
+    product_name VARCHAR(50),
+    total_amount DECIMAL(10,2),
+    quantity INT
+);
 INSERT INTO Category (category_id, category_name) VALUES 
 (1, 'Electronics'), (2, 'Clothing'), (3, 'Home & Garden'), (4, 'Books'), (5, 'Sports');
 
