@@ -100,6 +100,16 @@ It includes:
 
 ---
 
+### 6️⃣ Automated Sales History Tracking (Trigger)
+This trigger automatically creates a record in the Sale_History table whenever a new item is added to an order. It ensures data redundancy for analytical purposes without manual input.
+
+It includes:
+- Automatic synchronization between orders, customers, and products.
+- Real-time total amount calculation (unit_price * quantity).
+- Automated logging of customer full names and product titles.
+[Sixth query file](./queries/New-queries/Trigger_logic.sql).
+
+---
 ##  Last quistion
 
  How we can apply a denormalization mechanism on customer and order entities
