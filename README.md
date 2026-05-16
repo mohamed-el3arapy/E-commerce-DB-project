@@ -110,6 +110,20 @@ It includes:
 [Sixth query file](./queries/New-queries/Trigger_logic.sql).
 
 ---
+
+### 7️⃣ Concurrency Control & Data Protection (Pessimistic Locking)
+To protect crucial financial and inventory data from race conditions, pessimistic locking was implemented using MySQL transactions.
+
+- **Task A: Specific Field Isolation (Stock Quantity)**
+  Locks the stock metrics specifically on a row-level basis to secure inventory subtraction during high-traffic checkouts.
+  * 📂 **Source Code:** [Lock field query file](./queries/New-queries/Lock-field-quantity.sql).
+
+- **Task B: Complete Row Lock**
+  Locks the entire product snapshot from being altered by any external database sessions until the current transaction safely concludes.
+  * 📂 **Source Code:** [Lock row query file](./queries/New-queries/Lock-row.sql).
+
+ ---
+  
 ##  Last quistion
 
  How we can apply a denormalization mechanism on customer and order entities
